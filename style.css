@@ -34,8 +34,12 @@ nav a:hover{background:#ff8c00;color:#111}
 .hero-kanan{
     display:flex;
     justify-content:center;
-    align-items:centre;
+    align-items:center;
     gap:35px;
+}
+.hero-kanan img{
+    max-width:100%;
+    height:auto;
 }
 
 .robonex{
@@ -847,4 +851,181 @@ animation:float 3s ease-in-out infinite;
 
 .countdown{
     box-shadow:0 0 12px rgba(76,201,240,.5);
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+header{
+    padding:12px;
+}
+
+.tajuk h1{
+    font-size:1.5rem;
+}
+
+.tajuk h2{
+    font-size:1rem;
+}
+
+.tajuk h3{
+    font-size:.8rem;
+    letter-spacing:1px;
+}
+
+.hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero h1{
+    font-size:2rem;
+}
+
+.hero-kanan{
+    flex-direction:column;
+}
+
+.robonex{
+    width:170px;
+}
+
+#slideshow{
+    width:100%;
+    height:220px;
+}
+
+.info{
+    justify-content:center;
+}
+
+.info-box{
+    width:100%;
+}
+
+.aktiviti-item,
+.hall-card,
+.event-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.aktiviti-image img,
+.hall-image img,
+.event-image img{
+    width:100%;
+    height:auto;
+}
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+nav{
+    gap:8px;
+}
+
+nav a{
+    padding:8px 12px;
+    font-size:14px;
+}
+
+.profil h2,
+.aktiviti h2,
+.halloffame h2,
+.coming-event h2{
+    font-size:28px;
+}
+
+.event-info h3,
+.hall-info h3{
+    font-size:24px;
+}
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-kanan{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    #slideshow{
+        width:100%;
+        max-width:350px;
+    }
+
+    .robonex{
+        width:180px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+        padding:20px;
+    }
+
+    .logo-sekolah img,
+    .logo-robotik img{
+        width:90px;
+        height:90px;
+    }
+
+    .tajuk h1{
+        font-size:2rem;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+.hero{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-kanan{
+    flex-direction:column;
+    gap:20px;
+}
+
+#slideshow{
+    width:100%;
+    max-width:340px;
+    height:auto;
+}
+
+.robonex{
+    width:180px;
+    height:auto;
+}
+
+.info{
+    justify-content:center;
+}
+
+.btn-masuk{
+    display:inline-block;
+    margin:auto;
+}
+    
+
 }
